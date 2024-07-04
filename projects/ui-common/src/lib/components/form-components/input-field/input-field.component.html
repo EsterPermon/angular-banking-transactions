@@ -1,0 +1,9 @@
+<div class="input-container">
+  <label>{{ label }}</label>
+  <input
+    type="text"
+    required
+    [placeholder]="placeholder"
+    (input)="handleChange($event)"
+  />
+</div>
