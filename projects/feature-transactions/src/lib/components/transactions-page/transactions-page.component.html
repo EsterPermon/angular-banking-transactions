@@ -1,0 +1,12 @@
+<h1>Transactions</h1>
+
+<div *ngIf="error; else transactionsTemplate">
+  <p class="error">{{ error }}</p>
+</div>
+
+<ng-template #transactionsTemplate>
+  <lib-transactions-filters></lib-transactions-filters>
+  <lib-transactions-table
+    [transactions]="transactions$ | async"
+  ></lib-transactions-table>
+</ng-template>
