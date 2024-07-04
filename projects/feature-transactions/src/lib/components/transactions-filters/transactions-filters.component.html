@@ -1,0 +1,18 @@
+<div class="filters-container">
+  <lib-input-field
+    [label]="inputLabel"
+    [placeholder]="inputPlaceholder"
+    (onChange)="handleInputChange($event)"
+  ></lib-input-field>
+
+  <lib-select-field
+    [label]="selectLabel"
+    [options]="selectOptions"
+    (onChange)="handleSelectChange($event)"
+  ></lib-select-field>
+
+  <lib-button
+    [label]="buttonLabel"
+    (onClick)="handleButtonClick($event)"
+  ></lib-button>
+</div>
